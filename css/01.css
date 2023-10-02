@@ -1,0 +1,655 @@
+@charset "utf-8";
+
+
+.wrap {
+    width: 100%;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+
+.plug_in {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    background-color: #0c82e9;
+}
+
+.plug_inner {
+    position: relative;
+    max-width: 1152px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+
+.seoul_logo {
+    background: url(../img/icon/icon_set_common.png)no-repeat -122px -165px;
+    display: block;
+    width: 105px;
+    height: 27px;
+    margin: 8px 0 0 0;
+
+}
+
+
+
+
+.news {
+    position: absolute;
+    top: 0;
+    right: 290px;
+    left: 179px;
+    height: 48px;
+}
+
+
+
+
+.news li a:last-child {
+    display: block;
+    width: 100%;
+    height: 48px;
+    background-image: none;
+    font-size: 14px;
+    line-height: 48px;
+    color: #fff;
+}
+
+
+.sound_logo {
+    background: url(../img/icon/ico-sprite-common-gnb.png)-21px -53px no-repeat;
+    background-size: 350px auto;
+    width: 19px;
+    height: 17px;
+    margin: -5px 0 0 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 0
+}
+
+.plug_in ul:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.news2 li a {
+    color: #fff;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 15px;
+    font-weight: 700;
+}
+
+.plug_in2 {
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-color: #ddd;
+}
+
+.plug_in2 .inner {
+    height: 100%;
+    position: relative;
+
+}
+
+.plug_in2 .fl {
+    padding: 0;
+    align-items: center;
+    height: 100%;
+}
+
+.plug_in2 .fl li {
+    align-items: center;
+}
+
+.plug_in2 .fl li+li {
+    margin-left: 15px;
+}
+
+.plug_in2 .fl li a {
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+
+.plug_in2 .fl li a span {
+    align-items: center;
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #111;
+}
+
+
+
+.plug_in2 .fl li a .tit {
+    display: inline-block;
+    padding: 0 12px 0 10px;
+    color: #27384d;
+    font-weight: 700;
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 34px;
+    background-color: rgba(223, 225, 228, 1) !important;
+    margin-right: 10px;
+
+}
+
+.plug_in2 .fr {
+    height: 100%;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.plug_in2 .fr li {
+    display: table;
+    height: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-color: #ddd;
+
+}
+
+.plug_in2 .fr li a {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 16px;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.gnb {
+    position: relative;
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-color: #ddd;
+}
+
+.gnb .inner {
+    height: 100%;
+}
+
+.gnb h1 {
+    float: left;
+    display: table;
+    height: 100%;
+}
+
+.gnb h1 a {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.navi {
+    display: block;
+    float: left;
+    margin-left: 40px;
+    height: 100%;
+}
+
+.navi>ul {
+    align-items: center;
+    padding-top: 15px;
+    height: 100%;
+}
+
+
+.navi>ul>li>a {
+    display: block;
+    text-align: center;
+    padding: 0 16px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #111;
+    height: 100%;
+}
+
+.navi>ul>li>a>span {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+.gnb .fr {
+    display: table;
+    height: 100%;
+
+}
+
+.gnb .fr>li {
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.gnb .fr>li+li {
+    padding-left: 20px;
+}
+
+
+
+
+
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cb {
+    clear: both;
+}
+
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.m1_tit {
+    position: absolute;
+    top: 43px;
+    width: 220px;
+    left: 150px;
+}
+
+.m1_tit h2 {
+    display: block;
+    font-size: 26px;
+    color: #111;
+    font-weight: 700;
+    letter-spacing: -0.65px;
+    margin-bottom: 10px;
+}
+
+.m1_tit h2 p {
+    display: block;
+    color: #333;
+    letter-spacing: -0.4px;
+}
+
+
+.nav>li a span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 7px;
+    background: #f37b06;
+    transition: all .3s;
+
+}
+
+.nav>li a:hover>span::after {
+    left: 0;
+    width: 100%;
+}
+
+.m_width {
+    width: 1400px;
+    margin: 0 auto;
+    height: 424px;
+    min-height: 350px;
+    padding: 45px 0 70px 290px;
+}
+
+.nav ul li a:hover {
+    font-weight: 700;
+}
+
+
+.nav li div.width100 {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+    background: #fff;
+}
+
+.nav li:hover .width100 {
+    height: auto;
+}
+
+.nav>li .width100:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.nav .m_1 .width100:before {
+    background: url(../img/menu-bg01.png)no-repeat bottom left;
+}
+
+.nav .m_2 .width100:before {
+    background: url(../img/menu-bg02.png)no-repeat bottom left;
+}
+
+.nav .m_3 .width100:before {
+    background: url(../img/menu-bg03.png)no-repeat bottom left;
+}
+
+.nav .m_4 .width100:before {
+    background: url(../img/menu-bg04.png)no-repeat bottom left;
+}
+
+.nav .m_5 .width100:before {
+    background: url(../img/menu-bg05.png)no-repeat bottom left;
+}
+
+.nav .m_6 .width100:before {
+    background: url(../img/menu-bg06.png)no-repeat bottom left;
+}
+
+.nav .m_7 .width100:before {
+    background: url(../img/menu-bg07.png)no-repeat bottom left;
+}
+
+
+
+/* 2depth start */
+.nav li ul li {
+    width: calc((100% - 160.1px) / 4);
+    margin: 0;
+}
+
+.nav li ul li+li {
+    margin-left: 40px;
+}
+
+
+.nav li ul li dl {
+    padding-top: 20px;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.nav li ul li dl dt a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+}
+
+.nav li ul li h3 a {
+    display: block;
+    position: relative;
+    font-size: 22px;
+    color: #111;
+    font-weight: 500;
+
+}
+
+.nav li ul li h3 a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: url(../img/icon/icon-gnb-arr.png)no-repeat center;
+    background-size: 11px 10px;
+    transition: all .3s;
+}
+
+
+
+.mainbanner {
+    margin-top: 68px;
+}
+
+.mainbanner img {
+    border-radius: 1.375em;
+    overflow: hidden;
+}
+
+.quickLine {
+    margin-top: 3.25em;
+    padding: 0 3%;
+}
+
+.quickLine .inner {
+    align-items: center;
+}
+
+.quickLine .noticeBox {
+    height: 100%;
+    padding: 0.25em 5.15625% 0.25em 6.625em;
+    border-right: 1px solid #c2c2c2;
+    background: url(../img/icon/icon_notice.png) no-repeat 0.375em 50%;
+    background-size: auto 4.5em;
+    line-height: 1.25;
+}
+
+.noticeBox p:nth-child(1) {
+    font-size: 1.250em;
+}
+
+.noticeBox p:nth-child(2) {
+    font-weight: 700;
+    font-size: 1.375em;
+}
+
+.noticeBox p:nth-child(3) {
+    margin-top: 0.25em;
+    color: #999;
+}
+
+.quickLine .icon_list {
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.quickLine .icon_list li a {
+    display: block;
+    position: relative;
+    padding-top: 0.556em;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    font-size: 1.125em;
+}
+
+/* 이미지만 변경해서 사용이안되네? */
+.quickLine .icon_list li.i1 a span {
+    background: url(../img/icon/icon_quick01.png);
+    display: block;
+    padding-top: 2.889em;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: auto 2.611em;
+}
+
+.quickLine .icon_list li.i2 a span {
+    background: url(../img/icon/icon_quick02.png);
+    display: block;
+    padding-top: 2.889em;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: auto 2.611em;
+}
+
+.quickLine .icon_list li.i3 a span {
+    background: url(../img/icon/icon_quick03.png);
+    display: block;
+    padding-top: 2.889em;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: auto 2.611em;
+}
+
+.quickLine .icon_list li.i4 a span {
+    background: url(../img/icon/icon_quick04.png);
+    display: block;
+    padding-top: 2.889em;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: auto 2.611em;
+}
+
+.quickLine .icon_list li.i5 a span {
+    background: url(../img/icon/icon_quick05.png);
+    display: block;
+    padding-top: 2.889em;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: auto 2.611em;
+}
+
+.quickLine .icon_list li.i6 a span {
+    background: url(../img/icon/icon_quick06.png);
+    display: block;
+    padding-top: 2.889em;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: auto 2.611em;
+}
+
+/* 여기까지 수정해야함 꼭 */
+
+.quickLine .icon_list li a span::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: calc(50% + 0.833em);
+    width: 0;
+    height: 1.611em;
+    border-radius: 50%;
+    background: #ff7e00;
+}
+
+.quickLine .icon_list li a:hover span::before {
+    width: 1.611em;
+    transform: translate(4px, 4px);
+    transition: transform 0.4s;
+}
+
+.postSection {
+    margin-top: 3.25em;
+    padding: 0 3%;
+}
+
+.postSection .board_tab {
+    position: relative;
+}
+
+.tit_area {
+    align-items: center;
+    margin-bottom: 1.25em;
+}
+
+.tit_area>h3 {
+    flex-shrink: 0;
+    margin-right: 0.743em;
+    font-size: 2.188em;
+    font-family: 'yg-jalnan';
+}
+
+.tit_area ul li {
+    position: relative;
+    padding: 0 1.25em;
+}
+
+.tit_area ul li a {
+    display: inline-block;
+    padding-bottom: 0.2em;
+    color: #5d5d5d;
+    font-size: 1.250em;
+}
+
+.tit_area ul li::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 1.063em/2);
+    left: 0;
+    width: 1px;
+    height: 1.063em;
+    background: #ccc;
+}
+
+.notice_tab1 .notice_list {
+    display: grid;
+    grid-template-columns: 42.6% 57.4%;
+    padding-top: 1.125em;
+    border-top: 1px solid #000;
+    font-family: 'Spoqa Han Sans Neo';
+}
+
+.notice_tab1 .notice_list li {
+    margin: 0.375em 0;
+    padding-left: 3.625em;
+}
+
+.notice_tab1 .notice_list li:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    min-height: 10.5em;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 3.125em;
+    border-right: 1px solid #e5e5e5;
+}
+
+.notice_tab1 .notice_list li:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.notice_tab1 .notice_list li:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.notice_tab1 .notice_list li:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.notice_tab1 .notice_list li:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
