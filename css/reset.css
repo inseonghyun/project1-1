@@ -111,11 +111,6 @@ section {
     display: block;
 }
 
-body {
-    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
-    line-height: 1;
-}
-
 ol,
 ul {
     list-style: none;
@@ -164,9 +159,10 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
     color: var(--text1);
     font-size: 1.6rem;
+    line-height: 1;
 }
 
 a {
