@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <!-- program 슬라이드용 slick.css -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="css/01.css">
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script src='https://code.jquery.com/ui/1.13.2/jquery-ui.js'></script>
-    <script src="js/main.js"></script>
+    <!-- program 슬라이드용 slick.js -->
+    <!-- https://kenwheeler.github.io/slick/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -42,7 +49,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="tit">과천23.6</span>
+                                <span class="tit">과천 23.6</span>
                                 <span>미세먼지(-)/초미세먼지(-)/유동인구(-명)</span>
                             </a>
                         </li>
@@ -411,7 +418,7 @@
                     <li><a href="#">3</a></li>
                 </ul>
             </section>
-            <section class="quickLine">
+            <section class="quickLine sectioning">
                 <div class="inner flexbox">
                     <div class="noticeBox">
                         <p>9~10월 관람시간</p>
@@ -428,50 +435,174 @@
                     </ul>
                 </div>
             </section>
-            <section class="postSection">
+            <section class="postSection sectioning">
                 <div class="inner">
                     <div class="board_tab">
                         <div class="tit_area flexbox">
                             <h3>NOW</h3>
-                            <ul class="flexbox">
-                                <li><a href="">새소식</a></li>
-                                <li><a href="">채용/입찰</a></li>
-                                <li><a href="">공원안전공지</a></li>
+                            <ul class="flexbox tab_btns">
+                                <li class="active">
+                                    <a href="#all_tab" class="tab_btn">전체</a>
+                                </li>
+                                <li><a href="#notice_tab1" class="tab_btn1">새소식</a></li>
+                                <li><a href="#notice_tab2" class="tab_btn1">채용/입찰</a></li>
+                                <li><a href="#notice_tab3" class="tab_btn1">공원안전공지</a></li>
                             </ul>
                         </div>
-                        <div class="notice_tab1">
+                        <div id="notice_tab1" class="tab_contents1 active carousel">
                             <ul class="notice_list">
-                                <li><a href="">
-                                        <span class="tit"><i>새소식</i>네트워크 작업에 따른 서비스 중단 안내</span>
-                                        <span>2023.09.26</span>
-                                        <span>
-                                            서울대공원 홈페이지 이용에 진심으로 감사드립니다.
-                                            서울시 데이터센터 네트워크 작업으로 인해 시스템 점검시간 동안 웹서비스가 원활하지 않을 수 있으니 이 점 양해 바랍니다.
-                                            홈페이지 이용 시 참고하여 주시기 바랍니다.
-                                            ○ 중단일시 :2023.10. 5.(목) 19:00~23:00
-                                            ※ 데이터센터 작업 상황에 따라 서비스중단 및 작업시간이 변동될 수 있습니다.※ 작업시간 내 간헐적으로 서비스 중단 발생(약 1분
-                                            이내)...
+                                <li><a href="#">
+                                        <span class="tit"><i>새소식</i>[당첨자 발표] 숨은 조각 찾기 이벤트</span>
+                                        <span class="data">2023.11.03</span>
+                                        <span class="cont">
+                                            제8회 동물원 밖 동물원! 숨은 조각 찾기 이벤트 당첨자를 발표합니다. ※ 컨트롤 + F 키를 누른 후, 휴대폰번호 가운데 자리를
+                                            입력하면 쉽게 확인하실 수 있습니다.
+                                            스타벅스 기프티콘은 11.10.(금) 휴대폰번호로 발송 예정입니다.
+                                            종합과자선물세트를 수신하시는 분께는 문자로 링크 전해드렸습니다.
+                                            11.7.(화)까지 주소 답변해 주시면, 11.15.(수) 이내 우편 발송해드리겠습니다.
+                                            숨은 조각 찾기 전시는 내년 1.13.까지 계속되오니, 많은 관심 부탁드립니다.
+                                            스타벅스 카페라떼 기프티콘 당첨자 (총 200명)
+                                            토끼꼴라주 종합과자 선물세트 당첨자 (총 100명)
+                                            10.14.
+                                            010-2840-**** 010-8990-**** 010-2170-**** 010-8765-**** 010-5704-****
+                                            010-6634-****
+                                            10.15.
+                                            010-9648-**** 010-9047-**** 010-2664-***...</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i>새소식</i>[용역 사전규격공개] CCTV 통합관제센터 유지관리 용역</span>
+                                        <span class="data">2023.10.27</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i>새소식</i>2023년 11월 프로그램 안내</span>
+                                        <span class="data">2023.10.30</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i>새소식</i>[영상] 국내 최장수 할머니 코끼리, 사쿠라를 아시나요?</span>
+                                        <span class="data">2023.10.19</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i>새소식</i>[당첨자 발표] 추석 맞이 마음전하기 이벤트(기프티콘 발송 완료)</span>
+                                        <span class="data">2023.10.16</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="notice_tab2" class="tab_contents1 active carousel">
+                            <ul class="notice_list">
+                                <li><a href="#">
+                                        <span class="tit"><i class="staff">채용/입찰</i>서울대공원 공무직 채용시험 공고 </span>
+                                        <span class="data">2023.11.02</span>
+                                        <span class="cont">
+                                            ㅇ 채용분야 및 선발예정인원
+                                            기타 일정 및 세부사항은 붙임파일 참고 부탁드립니다.문의전화 : 02-500-7220, 7223
+                                            ... </span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i class="staff">채용/입찰</i>서울특별시 서울대공원 임기제공무원 서류전형 합격자 발표 및
+                                            면접시험 시행계획
+                                            공고</span>
+                                        <span class="data">2023.10.04</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i class="staff">채용/입찰</i>서울특별시 서울대공원 일반임기제공무원 최종합격자 공고</span>
+                                        <span class="data">2023.10.17</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i class="staff">채용/입찰</i>서울특별시 서울대공원 임기제공무원(동식물관리요원)
+                                            채용</span>
+                                        <span class="data">2023.09.19</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i class="staff">채용/입찰</i>서울대공원 임기제공무원 채용시험 계획 공고</span>
+                                        <span class="data">2023.09.12</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="notice_tab3" class="tab_contents1 active carousel">
+                            <ul class="notice_list">
+                                <li><a href="#">
+                                        <span class="tit"><i class="safety">공원 안전공지</i>[작업완료] 어린이동물원 일시 관람중단 안내
+                                            (10.24)</span>
+                                        <span class="data">2023.10.24</span>
+                                        <span class="cont"> 어린이동물원 마사토 복토 작업에 따른 안전사고 예방을 위해작업기간 중 어린이동물원 관람이 중단되오니 이용시
+                                            참고하여 주시기 바랍니다.
+                                            ㅇ 공사장소 : 어린이동물원
+                                            ㅇ 공사기간 : 23.10. 24.
+                                            ㅇ 공사내용 : 마사토 복토 작업...</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i class="safety">공원 안전공지</i>해양관 야외방사장 시설 개선 공사
+                                            안내(9.9.~10.27.)</span>
+                                        <span class="data">2023.09.08</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i class="safety">공원 안전공지</i>낙타사 주변 훼손녹지대 정비공사 안내
+                                            (8.31.~9.27.)</span>
+                                        <span class="data">2023.09.01</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <span class="tit"><i class="safety">공원 안전공지</i>동물원 내 가족힐링정원 조성공사 안내
+                                            (8.17.~10.30.)</span>
+                                        <span class="data">2023.08.21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="all_tab" class="tab_contents1 active carousel">
+                            <ul class="notice_list">
+                                <li><a href="#">
+                                        <span class="tit"><i>새소식</i>[당첨자 발표] 숨은 조각 찾기 이벤트</span>
+                                        <span class="data">2023.11.03</span>
+                                        <span class="cont">
+                                            제8회 동물원 밖 동물원! 숨은 조각 찾기 이벤트 당첨자를 발표합니다. ※ 컨트롤 + F 키를 누른 후, 휴대폰번호 가운데 자리를
+                                            입력하면 쉽게 확인하실 수 있습니다.
+                                            스타벅스 기프티콘은 11.10.(금) 휴대폰번호로 발송 예정입니다.
+                                            종합과자선물세트를 수신하시는 분께는 문자로 링크 전해드렸습니다.
+                                            11.7.(화)까지 주소 답변해 주시면, 11.15.(수) 이내 우편 발송해드리겠습니다.
+                                            숨은 조각 찾기 전시는 내년 1.13.까지 계속되오니, 많은 관심 부탁드립니다.
+                                            스타벅스 카페라떼 기프티콘 당첨자 (총 200명)
+                                            토끼꼴라주 종합과자 선물세트 당첨자 (총 100명)
+                                            10.14.
+                                            010-2840-**** 010-8990-**** 010-2170-**** 010-8765-**** 010-5704-****
+                                            010-6634-****
+                                            10.15.
+                                            010-9648-**** 010-9047-**** 010-2664-***...
                                         </span>
                                     </a>
                                 </li>
-                                <li><a href="">
-                                        <span><i>새소식</i>[발표] ESG 프로그램 기획자 선정</span>
-                                        <span>2023.09.26</span>
+                                <li><a href="#">
+                                        <span class="tit"><i class="staff">채용/입찰</i>서울대공원 공무직 채용시험 공고</span>
+                                        <span class="data">2023.09.26</span>
                                     </a>
                                 </li>
-                                <li><a href="">
-                                        <span><i>새소식</i>리프트 이용 요금 조정</span>
-                                        <span>2023.09.19</span>
+                                <li><a href="#">
+                                        <span class="tit"><i>새소식</i>[용역 사전규격공개] CCTV 통합관제센터 유지관리 용역</span>
+                                        <span class="data">2023.10.27</span>
                                     </a>
                                 </li>
-                                <li><a href="">
-                                        <span><i>새소식</i>제8회 동물원 밖 동물원 전시작가 공모(-9.21)</span>
-                                        <span>2023.09.12</span>
+                                <li><a href="#">
+                                        <span class="tit"><i>새소식</i>2023년 11월 프로그램 안내</span>
+                                        <span class="data">2023.10.30</span>
                                     </a>
                                 </li>
-                                <li><a href="">
-                                        <span><i>새소식</i>시베리아호랑이 폐사 관련 조직병리학적 검사 결과 안내</span>
-                                        <span>2023.09.11</span>
+                                <li><a href="#">
+                                        <span class="tit"><i class="safety">공원 안전공지</i>[작업완료] 어린이동물원 일시 관람중단 안내
+                                            (10.24)
+                                        </span>
+                                        <span class="data">2023.09.11</span>
                                     </a>
                                 </li>
                             </ul>
@@ -479,10 +610,594 @@
                     </div>
                 </div>
             </section>
-            <section class="mainbanner"></section>
-            <section class="mainbanner"></section>
+            <section class="program sectioning">
+                <div class="inner">
+                    <div class="board_tab">
+                        <div class="tit_area flexbox">
+                            <h3>program</h3>
+                            <ul class="flexbox tab_btns">
+                                <li class="active">
+                                    <a href="#all" class="tab_btn">전체</a>
+                                </li>
+                                <li><a href="#program1" class="tab_btn">교육프로그램</a></li>
+                                <li><a href="#program2" class="tab_btn">축제·행사</a></li>
+                                <li><a href="#program3" class="tab_btn">이벤트</a></li>
+                            </ul>
+                        </div>
+                        <article id="program1" class="tab_contents active carousel flexbox">
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s1.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">식물교실</i>
+                                        <i class="tit">[교육프로그램] 숲보따리 팡팡</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s2.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">식물교실</i>
+                                        <i class="tit">[교육프로그램] 식물원 지구여행</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s3.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">산림치유</i>
+                                        <i class="tit">[교육프로그램] 행복드림(단체용)</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s4.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">산림치유</i>
+                                        <i class="tit">[교육프로그램] 힐링숲(단체용)</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s5.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">산림치유</i>
+                                        <i class="tit">[교육프로그램] 하늘빛 마중숲(개인용)</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s6.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">동물교실</i>
+                                        <i class="tit">[교육프로그램] E-Book으로 만나는 서울동물원</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s7.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">동물교실</i>
+                                        <i class="tit">[교육프로그램] 전자책(e-book) 으로 배우는 동물 이야기</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </article>
+                        <article id="program2" class="tab_contents carousel flexbox">
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-1.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="pre">진행예정</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 가을 호수 한 바퀴</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-2.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 제8회 동물원 밖 동물원</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-3.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 제6회 서울대공원 영화제</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-4.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 서울대공원 여름숲 하이킹</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-5.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 제17회 서울대공원 식충식물 전시회</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                        <article id="program3" class="tab_contents carousel flexbox">
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-1.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] <제6회 서울대공원 영화제> 상영작 투표 이벤트!</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-2.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 선착순 30편 : 서울대공원 영화제 상영후보작 접수</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-3.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 뉴스레터 구독 이벤트</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-4.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 초성퀴즈 이벤트</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-5.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 제8회 동물원 밖 동물원 '숨은조각찾기' 이벤트</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-6.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 추석 맞이 마음전하기 이벤트</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                        <article id="all" class="tab_contents carousel flexbox">
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s1.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">식물교실</i>
+                                        <i class="tit">[교육프로그램] 숲보따리 팡팡</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s2.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">식물교실</i>
+                                        <i class="tit">[교육프로그램] 식물원 지구여행</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s3.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">산림치유</i>
+                                        <i class="tit">[교육프로그램] 행복드림(단체용)</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s4.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">산림치유</i>
+                                        <i class="tit">[교육프로그램] 힐링숲(단체용)</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s5.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">산림치유</i>
+                                        <i class="tit">[교육프로그램] 하늘빛 마중숲(개인용)</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s6.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">동물교실</i>
+                                        <i class="tit">[교육프로그램] E-Book으로 만나는 서울동물원</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/s7.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate">동물교실</i>
+                                        <i class="tit">[교육프로그램] 전자책(e-book) 으로 배우는 동물 이야기</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-1.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="pre">진행예정</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 가을 호수 한 바퀴</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-2.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 제8회 동물원 밖 동물원</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-3.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 제6회 서울대공원 영화제</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-4.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 서울대공원 여름숲 하이킹</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/2-5.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[축제행사] 제17회 서울대공원 식충식물 전시회</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-1.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] <제6회 서울대공원 영화제> 상영작 투표 이벤트!</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-2.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 선착순 30편 : 서울대공원 영화제 상영후보작 접수</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-3.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 뉴스레터 구독 이벤트</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-4.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="ing">진행중</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 초성퀴즈 이벤트</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-5.jfif" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 제8회 동물원 밖 동물원 '숨은조각찾기' 이벤트</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="content_item">
+                                <a href="#">
+                                    <span class="img">
+                                        <img src="/img/slide/3-6.png" alt="">
+                                    </span>
+                                    <span class="txt_area flexbox">
+                                        <em class="post">종료</em>
+                                        <i class="cate"></i>
+                                        <i class="tit">[이벤트] 추석 맞이 마음전하기 이벤트</i>
+                                        <i class="cont"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="banner_zone sectioning">
+                <div class="inner">
+                    <div class="flexbox">
+                        <article class="promotion">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="/img/fslide/1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="/img/fslide/2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="/img/fslide/3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="/img/fslide/4.png" alt="">
+                                </a>
+                            </div>
+                        </article>
+                        <article class="vr">
+                            <div class="tit">
+                                <h2>서울대공원 VR체험</h2>
+                                <p>항공 및 실내 VR로 서울대공원의 모습을 구경하세요.</p>
+                            </div>
+                            <ul class="list">
+                                <li><a href="#">동물원 VR</a></li>
+                                <li><a href="#">식물원 VR</a></li>
+                                <li><a href="#">테마가든 VR</a></li>
+                                <li><a href="#">돌고래 이야기관 VR</a></li>
+                            </ul>
+                        </article>
+                        <article class="sns">
+                            <p class="news_letter">
+                                <a href="#">
+                                    <span>
+                                        뉴스레터<br>구독하기
+                                    </span>
+                                </a>
+                            </p>
+                            <ul>
+                                <li class="i-1"><a href="#"><img src="/img/icon/icon_kakao.png" alt="카카오톡"></a></li>
+                                <li class="i-2"><a href="#"><img src="/img/icon/icon_facebook.png" alt="페이스북"></a></li>
+                                <li class="i-3"><a href="#"><img src="/img/icon/icon_blog.png" alt="블로그"></a></li>
+                                <li class="i-4"><a href="#"><img src="/img/icon/icon_instagram.png" alt="인스타그램"></a>
+                                </li>
+                                <li class="i-5"><a href="#"><img src="/img/icon/icon_youtube.png" alt="유튜브"></a></li>
+                                <li class="txt">SNS<br>바로가기</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="inner">
+                <div class="ftop">
+                    <div class="tel">
+                        <div class="tit">고객센터</div>
+                        <div class="con"><a href="">02-500-7335</a></div>
+                    </div>
+                    <div class="util">
+                        <div class="tit">법률정보</div>
+                        <div class="con">
+                            <ul>
+                                <li><a href="">개인정보처리방침</a></li>
+                                <li><a href="">윤리실천강령</a></li>
+                                <li class="last"><a href="">영상정보처리기기 운영·관리 방침</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sbanner">
+                        <a href=""><img src="/img/sbanner.jpg" alt=""></a>
+                    </div>
+                    <div class="wa">
+                        <a href=""><img src="/img/ic-wa-2021.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="fbot">
+                    <a href="">
+                        <img src="/img/footerlogo.png" alt="">
+                    </a>
+                    <div class="info">
+                        <address>경기도 과천시 대공원광장로 102(막계동) 서울대공원</address>
+                        <span>COPYRIGHT(C) 2020 SEOUL GRANDPARK. ALL RIGHTS RESERVED.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
