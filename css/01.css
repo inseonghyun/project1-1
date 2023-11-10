@@ -29,6 +29,19 @@
 	flex-direction: column;
 }
 
+section h3 {
+	text-indent: 999999999;
+	overflow: hidden;
+	display: none;
+}
+
+.gnb .inner h1 {
+	text-indent: 999999999;
+	overflow: hidden;
+	display: none;
+}
+
+
 /* header {
 	position: fixed;
 	top: 0;
