@@ -29,7 +29,7 @@
 	flex-direction: column;
 }
 
-section h3 {
+section h4 {
 	text-indent: 999999999;
 	overflow: hidden;
 	display: none;
