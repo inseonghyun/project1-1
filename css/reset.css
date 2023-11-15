@@ -146,6 +146,9 @@ table {
 }
 
 
+
+
+
 html {
     overflow-y: scroll;
     /* 시험이라서 하는 것 */
@@ -160,10 +163,12 @@ body {
     font-family: 'Roboto', 'Noto Sans KR', sans-serif;
     font-size: 1.6rem;
     line-height: 1;
+    color: #333;
 }
 
 a {
     text-decoration: none;
+    color: #333;
 }
 
 
