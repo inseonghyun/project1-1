@@ -30,13 +30,13 @@
 }
 
 section h4 {
-	text-indent: 999999999;
+	text-indent: 999999999px;
 	overflow: hidden;
 	display: none;
 }
 
 .gnb .inner h1 {
-	text-indent: 999999999;
+	text-indent: 999999999px;
 	overflow: hidden;
 	display: none;
 }
